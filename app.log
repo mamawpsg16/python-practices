@@ -1,0 +1,2 @@
+2024-09-05 15:50:22,436 - main.py - INFO - This will appear in both the console and the file
+2024-09-05 15:50:22,437 - main.py - ERROR - Error messages will also appear in both places

@@ -1,0 +1,16 @@
+DEBUG:This message should go to the log file
+INFO:So should this
+WARNING:And this, too
+ERROR:And non-ASCII stuff, too, like Øresund and Malmö
+DEBUG - This message should go to the log file - 2024-09-05 16:26:54,549 This message should go to the log file
+INFO - So should this - 2024-09-05 16:26:54,549 So should this
+WARNING - And this, too - 2024-09-05 16:26:54,549 And this, too
+ERROR - And non-ASCII stuff, too, like Øresund and Malmö - 2024-09-05 16:26:54,549 And non-ASCII stuff, too, like Øresund and Malmö
+[2024-09-05 16:27:49,022:DEBUG] - __main__ This message should go to the log file
+[2024-09-05 16:27:49,022:INFO] - __main__ So should this
+[2024-09-05 16:27:49,022:WARNING] - __main__ And this, too
+[2024-09-05 16:27:49,022:ERROR] - __main__ And non-ASCII stuff, too, like Øresund and Malmö
+[09/05/2024 04:28:19 PM:DEBUG] - __main__ This message should go to the log file
+[09/05/2024 04:28:19 PM:INFO] - __main__ So should this
+[09/05/2024 04:28:19 PM:WARNING] - __main__ And this, too
+[09/05/2024 04:28:19 PM:ERROR] - __main__ And non-ASCII stuff, too, like Øresund and Malmö

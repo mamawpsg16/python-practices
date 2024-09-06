@@ -1,4 +1,4 @@
-from psycopg2 import connect
+from psycopg2 import connect, OperationalError
 
 def get_connection():
     conn_params = {
@@ -8,13 +8,10 @@ def get_connection():
         'host': 'localhost',
         'port': '5432'
     }
-    
-    try:
-        with connect(**conn_params) as conn:
-            return conn
-            # Connection is automatically closed when exiting this block
-    except Exception as error:
-        print(f"Error connecting to the database: {error}")
 
-# Example usage:
-get_connection()
+    try:
+        conn = connect(**conn_params)
+        return conn
+    except OperationalError as error:
+        print(f"Error connecting to the database: {error}")
+        return None
